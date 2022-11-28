@@ -1,0 +1,26 @@
+.statistics {
+  margin-left: 40px;
+  display: block;
+  width: 400px;
+}
+.title {}
+
+.statList {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  text-align: center;
+}
+
+
+
+.label {
+}
+
+.percentage {}
