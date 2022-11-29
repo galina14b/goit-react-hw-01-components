@@ -1,17 +1,25 @@
 import clsx from "clsx";
+import PropTypes from 'prop-types';
 import css from "./FriendListItem.module.css"
 
-const FriendListItem = ({ variant, avatar, name, isOnline }) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <div class="item">
-      <span class={clsx(css[variant], {
+    <>
+      <span className={clsx(css, {
         [css.green]: isOnline,
-        [css.red]: false,
+        [css.red]: !isOnline,
       })}></span>
-      <img class="avatar" src={avatar} alt="User avatar" width="48" />
-    <p class="name">{name}</p>
-    </div>
+      <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+      <p className={css.name}>{name}</p>
+    </>
   ) 
 }
 
+FriendListItem.protoTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  isOnline: PropTypes.bool 
+}
+
 export { FriendListItem };
+

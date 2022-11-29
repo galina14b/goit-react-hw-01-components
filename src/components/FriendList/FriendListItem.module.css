@@ -1,20 +1,26 @@
-.item {}
 
-.status {
+.green::after {
+  content: '';
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  display: block;
-}
-
-.status .green {
+  display: inline-block;
   background-color: green;
 }
 
-.status .red {
+.red:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
   background-color: red;
 }
 
-.avatar {}
+.avatar {
+  margin: 0 20px 0;
+}
 
-.name {}
+.name {
+  margin: 0 0 10px;
+}
