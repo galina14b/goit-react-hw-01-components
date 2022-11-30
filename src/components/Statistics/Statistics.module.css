@@ -1,9 +1,16 @@
-.statistics {
+.wrapper {
+  width: 750px;
   margin: 0 auto;
-  display: block;
-  width: 400px;
+  border: 1px solid black;
 }
-.title {}
+
+.statistics {
+  display: block;
+  width: 700px;
+}
+.title {
+  text-align: center;
+}
 
 .statList {
   display: flex;
@@ -16,6 +23,8 @@
   flex-direction: column;
   margin: 0 15px;
   text-align: center;
+  border: 1px solid green;
+  width: 100px;
 }
 
 

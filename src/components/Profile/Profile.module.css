@@ -1,13 +1,20 @@
+.wrapper {
+  width: 300px;
+  height: 420px;
+  margin: 50px auto;
+  border: 1px solid darkgrey;
+}
+
 .profile {
-  background-color: #a9a9a9;
   font-size: 18px;
-  width: fit-content;
-  margin: 0 auto;
+  width: 300px;
+  height: 400px;
+  padding-top: 20px;
 }
 
 .description {
-  background-color: #fff;
-  width: 400px;
+  width: 260px;
+  margin: 0 auto;
 }
 
 .avatar {
@@ -16,6 +23,7 @@
   border-radius: 50%;
   display: block;
   margin: 0 auto;
+  padding-top: 10px;
 }
 
 .name {
@@ -49,6 +57,7 @@
   flex-direction: column;
   position: relative;
   text-align: center;
+  
 }
 
 
